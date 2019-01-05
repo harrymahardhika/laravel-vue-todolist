@@ -1,0 +1,78 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// vue notification
+.vue-notification {
+  padding: 10px !important;
+  margin: 10px 10px 0 !important;
+  font-size: .9em !important;
+  text-align: center !important;
+
+  color: #ffffff;
+  background: #44A4FC;
+  border-left: 5px solid #187FE7;
+
+  &.warn {
+    background: #ffb648;
+    border-left-color: #f48a06;
+  }
+
+  &.error {
+    background: #E54D42;
+    border-left-color: #B82E24;
+  }
+
+  &.success {
+    background: #68CD86;
+    border-left-color: #42A85F;
+  }
+}
+
+// projects
+.project-list {
+  .project-list-item {
+    border-top: 1px solid rgb(222, 226, 230);
+
+    .detail {
+      padding: 10px;
+      clear: both;
+    }
+
+    .progress {
+      background-color: #e2f0fb;
+      height: 4px;
+    }
+  }
+
+}
+
+// tasks
+.task-item {
+  .is-completed {
+    text-decoration: line-through;
+    color: lighten($body-color, 55%);
+  }
+
+  &:hover {
+    .task-action {
+      visibility: visible;
+    }
+  }
+
+  .task-action {
+    visibility: hidden;
+  }
+}
+
+
+
+
